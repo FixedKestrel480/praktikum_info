@@ -1,0 +1,79 @@
+/*
+ * Fahrzeug.cpp
+ *
+ *  Created on: Nov 1, 2024
+ *      Author: Karime Soriano
+ */
+
+#include <iostream>
+#include <string>
+#include <memory>
+#include <vector>
+#include <iomanip>
+
+class Fahrzeug {
+protected:
+    static int p_iMaxID;  // Klassenvariable für eindeutige ID-Zuweisung
+    int p_iID;
+    std::string p_sName;
+    double p_dMaxGeschwindigkeit;
+    double p_dGesamtStrecke;
+    double p_dGesamtZeit;
+    double p_dZeit;
+
+public:
+    // Konstruktor mit Name und optionaler Maximalgeschwindigkeit
+    Fahrzeug(const std::string& name, double maxGeschwindigkeit = 0.0)
+        : p_sName(name), p_dMaxGeschwindigkeit(maxGeschwindigkeit),
+          p_dGesamtStrecke(0.0), p_dGesamtZeit(0.0), p_dZeit(0.0), p_iID(++p_iMaxID) {
+        if (p_dMaxGeschwindigkeit < 0) {
+            p_dMaxGeschwindigkeit = 0.0;
+        }
+        std::cout << "Fahrzeug " << p_sName << " mit ID " << p_iID << " erstellt.\n";
+    }
+
+    virtual ~Fahrzeug() {
+        std::cout << "Fahrzeug " << p_sName << " mit ID " << p_iID << " gelöscht.\n";
+    }
+
+    // Statische Funktion für Überschrift
+    static void vKopf() {
+        std::cout << "ID    Name       MaxGeschwindigkeit  Gesamtstrecke\n"
+                  << "---------------------------------------------\n";
+    }
+
+    // Ausgabe der Fahrzeugdaten
+    virtual void vAusgeben() const {
+        std::cout << std::setw(4) << p_iID << "  "
+                  << std::setw(10) << p_sName << "  "
+                  << std::setw(16) << p_dMaxGeschwindigkeit << "  "
+                  << std::setw(14) << p_dGesamtStrecke << "\n";
+    }
+
+    // Dummy-Simulationsfunktion, um später erweitert zu werden
+    virtual void vSimulieren(double dGlobaleZeit) {
+        double dDeltaZeit = dGlobaleZeit - p_dZeit;
+        p_dGesamtStrecke += dDeltaZeit * p_dMaxGeschwindigkeit;
+        p_dGesamtZeit += dDeltaZeit;
+        p_dZeit = dGlobaleZeit;
+    }
+};
+
+// Initialisieren der statischen Variable für die ID-Vergabe
+int Fahrzeug::p_iMaxID = 0;
+
+int main() {
+    Fahrzeug::vKopf();  // Überschrift für die Ausgabe
+
+    // Fahrzeuge erstellen und simulieren
+    auto fahrzeug1 = std::make_unique<Fahrzeug>("PKW1", 40.0);
+    auto fahrzeug2 = std::make_unique<Fahrzeug>("Auto3", 30.0);
+
+    // Ausgabe der Fahrzeuge
+    fahrzeug1->vAusgeben();
+    fahrzeug2->vAusgeben();
+
+    return 0;
+}
+
+

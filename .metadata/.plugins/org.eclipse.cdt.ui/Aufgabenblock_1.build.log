@@ -1,0 +1,17 @@
+13:47:25 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
+..\Fahrzeug.cpp: In constructor 'Fahrzeug::Fahrzeug(const std::string&, double)':
+..\Fahrzeug.cpp:24:12: warning: 'Fahrzeug::p_dZeit' will be initialized after [-Wreorder]
+   24 |     double p_dZeit;
+      |            ^~~~~~~
+..\Fahrzeug.cpp:19:9: warning:   'int Fahrzeug::p_iID' [-Wreorder]
+   19 |     int p_iID;
+      |         ^~~~~
+..\Fahrzeug.cpp:28:5: warning:   when initialized here [-Wreorder]
+   28 |     Fahrzeug(const std::string& name, double maxGeschwindigkeit = 0.0)
+      |     ^~~~~~~~
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 Fahrzeug.o -lws2_32 
+
+13:47:28 Build Finished. 0 errors, 3 warnings. (took 3s.240ms)
+

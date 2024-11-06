@@ -1,0 +1,9 @@
+13:36:04 **** Rebuild of configuration Debug for project nalgo mas ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o para.o "..\\para.c" 
+g++ -o "nalgo mas.exe" para.o 
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/libmingw32.a(lib64_libmingw32_a-crtexewin.o):crtexewin.c:(.text.startup+0xbd): undefined reference to `WinMain'
+collect2.exe: error: ld returned 1 exit status
+
+13:36:04 Build Failed. 1 errors, 0 warnings. (took 177ms)
+

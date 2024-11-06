@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+environment/workspace/PATH/delimiter=;
+environment/workspace/PATH/operation=replace
+environment/workspace/PATH/value=C\:/mingw64/bin;C\:/Users/Karime Soriano/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_23.0.0.v20240919-1706/jre/bin/server;C\:/Users/Karime Soriano/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_23.0.0.v20240919-1706/jre/bin;C\:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C\:\\WINDOWS\\system32;C\:\\WINDOWS;C\:\\WINDOWS\\System32\\Wbem;C\:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C\:\\WINDOWS\\System32\\OpenSSH\\;C\:\\Program Files (x86)\\QuickTime\\QTSystem\\;C\:\\Users\\Karime Soriano\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C\:\\Users\\Karime Soriano\\AppData\\Local\\Programs\\Python\\Python311\\;C\:\\Users\\Karime Soriano\\AppData\\Local\\Microsoft\\WindowsApps;;C\:\\Program Files\\JetBrains\\PyCharm Community Edition 2022.3.2\\bin;;C\:\\Users\\Karime Soriano\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C\:\\WINDOWS\\system32;
+environment/workspace/append=true
+environment/workspace/appendContributed=true

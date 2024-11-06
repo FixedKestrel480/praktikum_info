@@ -1,0 +1,9 @@
+09:51:06 **** Incremental Build of configuration Debug for project second ****
+Info: Internal Builder is used for build
+gcc -o second.exe "src\\nuevo.o" "src\\second.o" 
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: src\second.o: in function `main':
+C:\Users\Karime Soriano\Desktop\Eclipse\second\Debug/../src/second.c:14: multiple definition of `main'; src\nuevo.o:C:\Users\Karime Soriano\Desktop\Eclipse\second\Debug/../src/nuevo.c:3: first defined here
+collect2.exe: error: ld returned 1 exit status
+
+09:51:06 Build Failed. 1 errors, 0 warnings. (took 177ms)
+

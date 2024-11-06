@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;nalgo mas/para-c&apos; to &apos;para.c&apos;" description="Rename resource &apos;para-c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="para-c" name="para.c" stamp="1730118771405" updateReferences="true"/>
+</session>

@@ -1,0 +1,6 @@
+11:31:58 **** Incremental Build of configuration Debug for project video ****
+Info: Internal Builder is used for build
+gcc -o video.exe prueba.o 
+
+11:31:58 Build Finished. 0 errors, 0 warnings. (took 157ms)
+

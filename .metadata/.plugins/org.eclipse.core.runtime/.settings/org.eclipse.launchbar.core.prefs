@@ -1,0 +1,16 @@
+LaunchTargetManager/configs/video.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:may Debug,org.eclipse.launchbar.core.descriptorType.default\:second Debug (1),org.eclipse.launchbar.core.descriptorType.default\:second Debug,org.eclipse.launchbar.core.descriptorType.default\:video Debug,org.eclipse.launchbar.core.descriptorType.default\:video.exe,org.eclipse.launchbar.core.descriptorType.default\:nalgo mas Debug,org.eclipse.launchbar.core.descriptorType.default\:Estructura c.exe,org.eclipse.launchbar.core.descriptorType.default\:bro Debug (1),org.eclipse.launchbar.core.descriptorType.default\:Estructura c Debug,org.eclipse.launchbar.core.descriptorType.default\:bro Debug (2),org.eclipse.launchbar.core.descriptorType.default\:bro Debug,org.eclipse.launchbar.core.descriptorType.default\:bro.exe,org.eclipse.launchbar.core.descriptorType.default\:Tarea 1 Debug,org.eclipse.launchbar.core.descriptorType.default\:Aufgabenblock_1 Debug,org.eclipse.launchbar.core.descriptorType.default\:Aufgabenblock
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Aufgabenblock/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Aufgabenblock/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Estructura\ c\ Debug/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Estructura\ c\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:bro\ Debug\ (1)/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:bro\ Debug\ (1)/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:bro\ Debug/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:bro\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:may\ Debug/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:may\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

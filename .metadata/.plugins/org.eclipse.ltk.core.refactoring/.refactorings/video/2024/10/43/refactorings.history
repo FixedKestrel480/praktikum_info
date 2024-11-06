@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;video/tipo de datos&apos; to &apos;tipo de datos.c&apos;" description="Rename resource &apos;tipo de datos&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="tipo de datos" name="tipo de datos.c" stamp="1729762007824" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;video/tipo de datos.c&apos; to &apos;tipdat.c&apos;" description="Rename resource &apos;tipo de datos.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="tipo de datos.c" name="tipdat.c" stamp="1729762055900" updateReferences="true"/>
+</session>

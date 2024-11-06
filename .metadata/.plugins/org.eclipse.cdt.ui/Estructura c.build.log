@@ -1,0 +1,6 @@
+09:02:32 **** Incremental Build of configuration Debug for project Estructura c ****
+Info: Internal Builder is used for build
+gcc "-LC:\\boost\\libs" -o "Estructura c.exe" prueba.o -lws2_32 
+
+09:02:32 Build Finished. 0 errors, 0 warnings. (took 426ms)
+

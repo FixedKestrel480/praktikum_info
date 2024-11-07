@@ -1,3 +1,4 @@
+LaunchTargetManager/configs/Aufgabenblock=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/configs/video.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local

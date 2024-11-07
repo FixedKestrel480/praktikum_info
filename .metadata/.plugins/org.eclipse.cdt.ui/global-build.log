@@ -13,3 +13,19 @@ g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeu
    28 |     Fahrzeug(const std::string& name, double maxGeschwindigkeit = 0.0)
       |     ^~~~~~~~
 g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 Fahrzeug.o -lws2_32 
+15:44:05 **** Rebuild of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
+..\Fahrzeug.cpp: In constructor 'Fahrzeug::Fahrzeug(const std::string&, double)':
+..\Fahrzeug.cpp:28:12: warning: 'Fahrzeug::p_dZeit' will be initialized after [-Wreorder]
+   28 |     double p_dZeit;
+      |            ^~~~~~~
+..\Fahrzeug.cpp:23:9: warning:   'int Fahrzeug::p_iID' [-Wreorder]
+   23 |     int p_iID;
+      |         ^~~~~
+..\Fahrzeug.cpp:32:5: warning:   when initialized here [-Wreorder]
+   32 |     Fahrzeug(const std::string& name, double maxGeschwindigkeit = 0.0)
+      |     ^~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" "..\\.metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.c" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o -lws2_32 
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" "..\\.metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.cpp" 

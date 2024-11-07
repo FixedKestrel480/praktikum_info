@@ -1,31 +1,554 @@
+14:10:13 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" main.o -lws2_32 
 Info: Nothing to build for Aufgabenblock_1
-13:47:25 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+14:35:53 **** Incremental Build of configuration Debug for project 1000 ****
+Info: Internal Builder is used for build
+g++ "-LC:\\boost\\libs" -o 1000.exe main.o -lws2_32 
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/libmingw32.a(lib64_libmingw32_a-crtexewin.o):crtexewin.c:(.text.startup+0xbd): undefined reference to `WinMain'
+collect2.exe: error: ld returned 1 exit status
+14:35:53 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:25:2: error: expected '}' at end of input
+   25 | }
+      |  ^
+In file included from ..\main.cpp:18:
+..\Fahrzeug.h:15:15: note: to match this '{'
+   15 | class Fahrzeug{
+      |               ^
+..\main.cpp:25:2: error: expected unqualified-id at end of input
+   25 | }
+      |  ^
+Info: Nothing to build for Aufgabenblock_2
+Info: Nothing to build for algo
+14:35:55 **** Rebuild of configuration Debug for project bro ****
+Info: Internal Builder is used for build
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o bro1.o "..\\bro1.cpp" 
+g++ "-LC:\\boost\\libs" -o bro.exe bro1.o -lws2_32 
+14:35:57 **** Rebuild of configuration Debug for project esto ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\esto.o" "..\\src\\esto.c" 
+gcc -o esto.exe "src\\esto.o" 
+14:37:56 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
 Info: Internal Builder is used for build
 g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
-..\Fahrzeug.cpp: In constructor 'Fahrzeug::Fahrzeug(const std::string&, double)':
-..\Fahrzeug.cpp:24:12: warning: 'Fahrzeug::p_dZeit' will be initialized after [-Wreorder]
-   24 |     double p_dZeit;
-      |            ^~~~~~~
-..\Fahrzeug.cpp:19:9: warning:   'int Fahrzeug::p_iID' [-Wreorder]
-   19 |     int p_iID;
+In file included from ..\Fahrzeug.cpp:8:
+..\Fahrzeug.h: In constructor 'Fahrzeug::Fahrzeug()':
+..\Fahrzeug.h:19:17: warning: 'Fahrzeug::p_sName' will be initialized after [-Wreorder]
+   19 |     std::string p_sName;  // Nombre del vehículo
+      |                 ^~~~~~~
+..\Fahrzeug.h:18:9: warning:   'int Fahrzeug::p_iID' [-Wreorder]
+   18 |     int p_iID;            // ID único para cada objeto
       |         ^~~~~
-..\Fahrzeug.cpp:28:5: warning:   when initialized here [-Wreorder]
-   28 |     Fahrzeug(const std::string& name, double maxGeschwindigkeit = 0.0)
-      |     ^~~~~~~~
-g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 Fahrzeug.o -lws2_32 
-15:44:05 **** Rebuild of configuration Debug for project Aufgabenblock_1 ****
+..\Fahrzeug.cpp:15:1: warning:   when initialized here [-Wreorder]
+   15 | Fahrzeug::Fahrzeug() : p_sName(""), p_iID(++p_iMaxID) {
+      | ^~~~~~~~
+..\Fahrzeug.h: In constructor 'Fahrzeug::Fahrzeug(const std::string&)':
+..\Fahrzeug.h:19:17: warning: 'Fahrzeug::p_sName' will be initialized after [-Wreorder]
+   19 |     std::string p_sName;  // Nombre del vehículo
+      |                 ^~~~~~~
+..\Fahrzeug.h:18:9: warning:   'int Fahrzeug::p_iID' [-Wreorder]
+   18 |     int p_iID;            // ID único para cada objeto
+      |         ^~~~~
+..\Fahrzeug.cpp:19:1: warning:   when initialized here [-Wreorder]
+   19 | Fahrzeug::Fahrzeug(const std::string& sName) : p_sName(sName), p_iID(++p_iMaxID) {
+      | ^~~~~~~~
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+15:58:21 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+16:25:36 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+09:23:31 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+11:28:00 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+Info: Nothing to build for Aufgabenblock_1
+Info: Nothing to build for Aufgabenblock_1
+Info: Nothing to build for Aufgabenblock_1
+Info: Nothing to build for Aufgabenblock_1
+Info: Nothing to build for Aufgabenblock_1
+Info: Nothing to build for Aufgabenblock_1
+12:13:21 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
 Info: Internal Builder is used for build
 g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
-..\Fahrzeug.cpp: In constructor 'Fahrzeug::Fahrzeug(const std::string&, double)':
-..\Fahrzeug.cpp:28:12: warning: 'Fahrzeug::p_dZeit' will be initialized after [-Wreorder]
-   28 |     double p_dZeit;
-      |            ^~~~~~~
-..\Fahrzeug.cpp:23:9: warning:   'int Fahrzeug::p_iID' [-Wreorder]
-   23 |     int p_iID;
-      |         ^~~~~
-..\Fahrzeug.cpp:32:5: warning:   when initialized here [-Wreorder]
-   32 |     Fahrzeug(const std::string& name, double maxGeschwindigkeit = 0.0)
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+12:41:34 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
+..\Fahrzeug.cpp:36:1: error: no declaration matches 'Fahrzeug::Fahrzeug(const std::string&)'
+   36 | Fahrzeug::Fahrzeug(const std::string& sName)
+      | ^~~~~~~~
+In file included from ..\Fahrzeug.cpp:8:
+..\Fahrzeug.h:14:7: note: candidates are: 'Fahrzeug::Fahrzeug(const Fahrzeug&)'
+   14 | class Fahrzeug { //Klasse Fahrzeug mit ein Name und eine unique ID
+      |       ^~~~~~~~
+..\Fahrzeug.h:32:5: note:                 'Fahrzeug::Fahrzeug(const std::string&, double)'
+   32 |     Fahrzeug(const std::string& sName, double dMaxGeschwindigkeit); // Constructor con nombre y velocidad máxima
       |     ^~~~~~~~
+..\Fahrzeug.cpp:16:1: note:                 'Fahrzeug::Fahrzeug()'
+   16 | Fahrzeug::Fahrzeug()
+      | ^~~~~~~~
+..\Fahrzeug.h:14:7: note: 'class Fahrzeug' defined here
+   14 | class Fahrzeug { //Klasse Fahrzeug mit ein Name und eine unique ID
+      |       ^~~~~~~~
+12:41:43 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+13:27:58 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: Fahrzeug.o: in function `Fahrzeug::Fahrzeug()':
+C:\Users\Karime Soriano\Desktop\Eclipse\Aufgabenblock_1\Debug/../Fahrzeug.cpp:18: undefined reference to `Fahrzeug::vOutput()'
+collect2.exe: error: ld returned 1 exit status
+13:33:58 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+13:34:32 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: Fahrzeug.o: in function `Fahrzeug::Fahrzeug()':
+C:\Users\Karime Soriano\Desktop\Eclipse\Aufgabenblock_1\Debug/../Fahrzeug.cpp:18: undefined reference to `Fahrzeug::vOutput()'
+collect2.exe: error: ld returned 1 exit status
+13:35:23 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: Fahrzeug.o: in function `Fahrzeug::Fahrzeug()':
+C:\Users\Karime Soriano\Desktop\Eclipse\Aufgabenblock_1\Debug/../Fahrzeug.cpp:18: undefined reference to `Fahrzeug::vOutput()'
+collect2.exe: error: ld returned 1 exit status
+13:36:01 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+13:37:39 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+16:36:01 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+Info: Nothing to build for Aufgabenblock_1
+Info: Nothing to build for Aufgabenblock_1
+20:02:21 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file Aufgabenblock_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:02:29 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file Aufgabenblock_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:05:35 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file Aufgabenblock_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:05:46 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file Aufgabenblock_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:07:12 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file Aufgabenblock_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:09:35 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+Info: Nothing to build for Aufgabenblock_1
+20:10:04 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+20:15:59 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
+..\Fahrzeug.cpp: In member function 'void Fahrzeug::vAusgeben() const':
+..\Fahrzeug.cpp:61:70: error: expected unqualified-id before '<' token
+   61 |         std::cout<<std::setw(5)<<p_iID<<std::setw(15)<<p_sName<<std::<setw(20)<<p_dMaxGeschwindigkeit<<std::setw(20)<<p_dGesamtStrecke;
+      |                                                                      ^
+..\Fahrzeug.cpp:61:79: error: no match for 'operator<<' (operand types are 'std::_Setw' and 'const double')
+   61 |         std::cout<<std::setw(5)<<p_iID<<std::setw(15)<<p_sName<<std::<setw(20)<<p_dMaxGeschwindigkeit<<std::setw(20)<<p_dGesamtStrecke;
+      |                                                                       ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                           |     |
+      |                                                                           |     const double
+      |                                                                           std::_Setw
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.h:47,
+                 from C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string:54,
+                 from C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h:40,
+                 from C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h:41,
+                 from C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios:44,
+                 from C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream:40,
+                 from C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream:41,
+                 from ..\Fahrzeug.h:10,
+                 from ..\Fahrzeug.cpp:8:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string_view:760:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, basic_string_view<_CharT, _Traits>)'
+  760 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string_view:760:5: note:   template argument deduction/substitution failed:
+..\Fahrzeug.cpp:61:81: note:   'std::_Setw' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+   61 |         std::cout<<std::setw(5)<<p_iID<<std::setw(15)<<p_sName<<std::<setw(20)<<p_dMaxGeschwindigkeit<<std::setw(20)<<p_dGesamtStrecke;
+      |                                                                                 ^~~~~~~~~~~~~~~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.h:4031:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 4031 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.h:4031:5: note:   template argument deduction/substitution failed:
+..\Fahrzeug.cpp:61:81: note:   'std::_Setw' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+   61 |         std::cout<<std::setw(5)<<p_iID<<std::setw(15)<<p_sName<<std::<setw(20)<<p_dMaxGeschwindigkeit<<std::setw(20)<<p_dGesamtStrecke;
+      |                                                                                 ^~~~~~~~~~~~~~~~~~~~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memory_resource.h:38,
+                 from C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string:58:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstddef:124:5: note: candidate: 'template<class _IntegerType> constexpr std::__byte_op_t<_IntegerType> std::operator<<(byte, _IntegerType)'
+  124 |     operator<<(byte __b, _IntegerType __shift) noexcept
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstddef:124:5: note:   template argument deduction/substitution failed:
+..\Fahrzeug.cpp:61:75: note:   cannot convert 'std::setw(20)' (type 'std::_Setw') to type 'std::byte'
+   61 |         std::cout<<std::setw(5)<<p_iID<<std::setw(15)<<p_sName<<std::<setw(20)<<p_dMaxGeschwindigkeit<<std::setw(20)<<p_dGesamtStrecke;
+      |                                                                       ~~~~^~~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h:46:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/system_error:339:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const error_code&)'
+  339 |     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/system_error:339:5: note:   template argument deduction/substitution failed:
+..\Fahrzeug.cpp:61:81: note:   'std::_Setw' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+   61 |         std::cout<<std::setw(5)<<p_iID<<std::setw(15)<<p_sName<<std::<setw(20)<<p_dMaxGeschwindigkeit<<std::setw(20)<<p_dGesamtStrecke;
+      |                                                                                 ^~~~~~~~~~~~~~~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream:554:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, _CharT)'
+  554 |     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream:554:5: note:   template argument deduction/substitution failed:
+..\Fahrzeug.cpp:61:81: note:   'std::_Setw' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+   61 |         std::cout<<std::setw(5)<<p_iID<<std::setw(15)<<p_sName<<std::<setw(20)<<p_dMaxGeschwindigkeit<<std::setw(20)<<p_dGesamtStrecke;
+      |                                                                                 ^~~~~~~~~~~~~~~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream:564:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, char)'
+  564 |     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream:564:5: note:   template argument deduction/substitution failed:
+..\Fahrzeug.cpp:61:81: note:   'std::_Setw' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+   61 |         std::cout<<std::setw(5)<<p_iID<<std::setw(15)<<p_sName<<std::<setw(20)<<p_dMaxGeschwindigkeit<<std::setw(20)<<p_dGesamtStrecke;
+      |                                                                                 ^~~~~~~~~~~~~~~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream:570:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, char)'
+  570 |     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream:570:5: note:   template argument deduction/substitution failed:
+..\Fahrzeug.cpp:61:81: note:   'std::_Setw' is not derived from 'std::basic_ostream<char, _Traits>'
+   61 |         std::cout<<std::setw(5)<<p_iID<<std::setw(15)<<p_sName<<std::<setw(20)<<p_dMaxGeschwindigkeit<<std::setw(20)<<p_dGesamtStrecke;
+      |                                                                                 ^~~~~~~~~~~~~~~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream:581:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, signed char)'
+  581 |     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream:581:5: note:   template argument deduction/substitution failed:
+..\Fahrzeug.cpp:61:81: note:   'std::_Setw' is not derived from 'std::basic_ostream<char, _Traits>'
+   61 |         std::cout<<std::setw(5)<<p_iID<<std::setw(15)<<p_sName<<std::<setw(20)<<p_dMaxGeschwindigkeit<<std::setw(20)<<p_dGesamtStrecke;
+      |                                                                                 ^~~~~~~~~~~~~~~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream:586:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, unsigned char)'
+  586 |     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream:586:5: note:   template argument deduction/substitution failed:
+..\Fahrzeug.cpp:61:81: note:   'std::_Setw' is not derived from 'std::basic_ostream<char, _Traits>'
+   61 |         std::cout<<std::setw(5)<<p_iID<<std::setw(15)<<p_sName<<std::<setw(20)<<p_dMaxGeschwindigkeit<<std::setw(20)<<p_dGesamtStrecke;
+      |                                                                                 ^~~~~~~~~~~~~~~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream:645:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const _CharT*)'
+  645 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream:645:5: note:   template argument deduction/substitution failed:
+..\Fahrzeug.cpp:61:81: note:   'std::_Setw' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+   61 |         std::cout<<std::setw(5)<<p_iID<<std::setw(15)<<p_sName<<std::<setw(20)<<p_dMaxGeschwindigkeit<<std::setw(20)<<p_dGesamtStrecke;
+      |                                                                                 ^~~~~~~~~~~~~~~~~~~~~
+In file included from C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream:880:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc:307:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const char*)'
+  307 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc:307:5: note:   template argument deduction/substitution failed:
+..\Fahrzeug.cpp:61:81: note:   'std::_Setw' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+   61 |         std::cout<<std::setw(5)<<p_iID<<std::setw(15)<<p_sName<<std::<setw(20)<<p_dMaxGeschwindigkeit<<std::setw(20)<<p_dGesamtStrecke;
+      |                                                                                 ^~~~~~~~~~~~~~~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream:662:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const char*)'
+  662 |     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream:662:5: note:   template argument deduction/substitution failed:
+..\Fahrzeug.cpp:61:81: note:   'std::_Setw' is not derived from 'std::basic_ostream<char, _Traits>'
+   61 |         std::cout<<std::setw(5)<<p_iID<<std::setw(15)<<p_sName<<std::<setw(20)<<p_dMaxGeschwindigkeit<<std::setw(20)<<p_dGesamtStrecke;
+      |                                                                                 ^~~~~~~~~~~~~~~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream:675:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const signed char*)'
+  675 |     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream:675:5: note:   template argument deduction/substitution failed:
+..\Fahrzeug.cpp:61:81: note:   'std::_Setw' is not derived from 'std::basic_ostream<char, _Traits>'
+   61 |         std::cout<<std::setw(5)<<p_iID<<std::setw(15)<<p_sName<<std::<setw(20)<<p_dMaxGeschwindigkeit<<std::setw(20)<<p_dGesamtStrecke;
+      |                                                                                 ^~~~~~~~~~~~~~~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream:680:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const unsigned char*)'
+  680 |     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream:680:5: note:   template argument deduction/substitution failed:
+..\Fahrzeug.cpp:61:81: note:   'std::_Setw' is not derived from 'std::basic_ostream<char, _Traits>'
+   61 |         std::cout<<std::setw(5)<<p_iID<<std::setw(15)<<p_sName<<std::<setw(20)<<p_dMaxGeschwindigkeit<<std::setw(20)<<p_dGesamtStrecke;
+      |                                                                                 ^~~~~~~~~~~~~~~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream:801:5: note: candidate: 'template<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&)'
+  801 |     operator<<(_Ostream&& __os, const _Tp& __x)
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream:801:5: note:   template argument deduction/substitution failed:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream: In substitution of 'template<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::_Setw; _Tp = double]':
+..\Fahrzeug.cpp:61:74:   required from here
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream:801:5: error: no type named 'type' in 'struct std::enable_if<false, void>'
+In file included from ..\Fahrzeug.cpp:10:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip:81:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, _Resetiosflags)'
+   81 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Resetiosflags __f)
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip:81:5: note:   template argument deduction/substitution failed:
+..\Fahrzeug.cpp:61:81: note:   'std::_Setw' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+   61 |         std::cout<<std::setw(5)<<p_iID<<std::setw(15)<<p_sName<<std::<setw(20)<<p_dMaxGeschwindigkeit<<std::setw(20)<<p_dGesamtStrecke;
+      |                                                                                 ^~~~~~~~~~~~~~~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip:111:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, _Setiosflags)'
+  111 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setiosflags __f)
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip:111:5: note:   template argument deduction/substitution failed:
+..\Fahrzeug.cpp:61:81: note:   'std::_Setw' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+   61 |         std::cout<<std::setw(5)<<p_iID<<std::setw(15)<<p_sName<<std::<setw(20)<<p_dMaxGeschwindigkeit<<std::setw(20)<<p_dGesamtStrecke;
+      |                                                                                 ^~~~~~~~~~~~~~~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip:145:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, _Setbase)'
+  145 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setbase __f)
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip:145:5: note:   template argument deduction/substitution failed:
+..\Fahrzeug.cpp:61:81: note:   'std::_Setw' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+   61 |         std::cout<<std::setw(5)<<p_iID<<std::setw(15)<<p_sName<<std::<setw(20)<<p_dMaxGeschwindigkeit<<std::setw(20)<<p_dGesamtStrecke;
+      |                                                                                 ^~~~~~~~~~~~~~~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip:180:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, _Setfill<_CharT>)'
+  180 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setfill<_CharT> __f)
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip:180:5: note:   template argument deduction/substitution failed:
+..\Fahrzeug.cpp:61:81: note:   'std::_Setw' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+   61 |         std::cout<<std::setw(5)<<p_iID<<std::setw(15)<<p_sName<<std::<setw(20)<<p_dMaxGeschwindigkeit<<std::setw(20)<<p_dGesamtStrecke;
+      |                                                                                 ^~~~~~~~~~~~~~~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip:210:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, _Setprecision)'
+  210 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setprecision __f)
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip:210:5: note:   template argument deduction/substitution failed:
+..\Fahrzeug.cpp:61:81: note:   'std::_Setw' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+   61 |         std::cout<<std::setw(5)<<p_iID<<std::setw(15)<<p_sName<<std::<setw(20)<<p_dMaxGeschwindigkeit<<std::setw(20)<<p_dGesamtStrecke;
+      |                                                                                 ^~~~~~~~~~~~~~~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip:240:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, _Setw)'
+  240 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setw __f)
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip:240:5: note:   template argument deduction/substitution failed:
+..\Fahrzeug.cpp:61:81: note:   'std::_Setw' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+   61 |         std::cout<<std::setw(5)<<p_iID<<std::setw(15)<<p_sName<<std::<setw(20)<<p_dMaxGeschwindigkeit<<std::setw(20)<<p_dGesamtStrecke;
+      |                                                                                 ^~~~~~~~~~~~~~~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip:313:5: note: candidate: 'template<class _CharT, class _Traits, class _MoneyT> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, _Put_money<_MoneyT>)'
+  313 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Put_money<_MoneyT> __f)
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip:313:5: note:   template argument deduction/substitution failed:
+..\Fahrzeug.cpp:61:81: note:   'std::_Setw' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+   61 |         std::cout<<std::setw(5)<<p_iID<<std::setw(15)<<p_sName<<std::<setw(20)<<p_dMaxGeschwindigkeit<<std::setw(20)<<p_dGesamtStrecke;
+      |                                                                                 ^~~~~~~~~~~~~~~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip:365:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, _Put_time<_CharT>)'
+  365 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Put_time<_CharT> __f)
+      |     ^~~~~~~~
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip:365:5: note:   template argument deduction/substitution failed:
+..\Fahrzeug.cpp:61:81: note:   'std::_Setw' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+   61 |         std::cout<<std::setw(5)<<p_iID<<std::setw(15)<<p_sName<<std::<setw(20)<<p_dMaxGeschwindigkeit<<std::setw(20)<<p_dGesamtStrecke;
+      |                                                                                 ^~~~~~~~~~~~~~~~~~~~~
+20:16:41 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+Info: Nothing to build for Aufgabenblock_1
+12:21:23 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" "..\\.metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.cpp" 
+12:41:32 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+12:42:17 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+12:42:55 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+11:39:08 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
+..\Fahrzeug.cpp: In member function 'void Fahrzeug::vAusgeben() const':
+..\Fahrzeug.cpp:76:29: error: found ':' in nested-name-specifier, expected '::'
+   76 |         cout<<std::left<<std:setw(5)<<p_iID<<
+      |                             ^
+      |                             ::
+11:43:31 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+11:44:37 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+11:45:14 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+11:45:30 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+11:51:22 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+11:54:10 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+12:03:50 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+12:23:43 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+12:24:09 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+12:34:20 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+12:35:02 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+12:35:14 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+14:39:08 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+14:40:34 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+15:37:23 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+18:12:53 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+09:26:32 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+Info: Nothing to build for Aufgabenblock_1
+09:35:03 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+09:35:35 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+09:39:35 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
+..\Fahrzeug.cpp:109:1: error: expected declaration before '}' token
+  109 | }
+      | ^
+09:40:17 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+09:40:45 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+11:19:43 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:168:23: error: expected ';' before 'return'
+  168 |         vAufgaben1_8()
+      |                       ^
+      |                       ;
+......
+  171 |     return 0;
+      |     ~~~~~~             
+11:19:57 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+Info: Nothing to build for Aufgabenblock_1
+17:13:46 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+17:48:45 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'void vAufgabe1a()':
+..\main.cpp:104:13: warning: unused variable 'iSchritte' [-Wunused-variable]
+  104 |         int iSchritte=10;
+      |             ^~~~~~~~~
+..\main.cpp:96:24: warning: 'i' is used uninitialized [-Wuninitialized]
+   96 |         for(double i; i<=3;i++){
+      |                       ~^~~
+..\main.cpp:96:20: note: 'i' was declared here
+   96 |         for(double i; i<=3;i++){
+      |                    ^
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" "..\\.metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.c" 
-g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o -lws2_32 
-g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" "..\\.metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+17:51:10 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 
+16:17:11 **** Incremental Build of configuration Debug for project Aufgabenblock_1 ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" "..\\.metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.c" 
+g++ -std=c++17 "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o Fahrzeug.o "..\\Fahrzeug.cpp" 
+g++ "-LC:\\boost\\libs" -o Aufgabenblock_1 ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" Fahrzeug.o main.o -lws2_32 

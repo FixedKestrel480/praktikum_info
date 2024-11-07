@@ -17,6 +17,7 @@
 //cbasfg
 
 //bbranch test
+// hjhvjf
 class Fahrzeug {
 protected:
     static int p_iMaxID;  // Klassenvariable für eindeutige ID-Zuweisung

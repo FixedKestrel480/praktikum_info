@@ -15,6 +15,8 @@
 
 #include <limits>
 //cbasfg
+
+//bbranch test
 class Fahrzeug {
 protected:
     static int p_iMaxID;  // Klassenvariable für eindeutige ID-Zuweisung

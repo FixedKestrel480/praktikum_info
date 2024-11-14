@@ -7,8 +7,13 @@
 
 #ifndef FAHRRAD_H_
 #define FAHRRAD_H_
+#include "Fahrzeug.h"
+using namespace std;
+
+class Fahrrad: public Fahrzeug{
 
 
+};
 
 
 

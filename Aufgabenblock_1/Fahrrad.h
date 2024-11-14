@@ -11,7 +11,12 @@
 using namespace std;
 
 class Fahrrad: public Fahrzeug{
+public:
+	Fahrrad(string sName, double dMaxGeschwindigkeit);
+	//virtual ~Fahrrad();
 
+	void vSimulieren() override;   // Sobreescribe la simulación específica para Fahrrad
+	void vAusgeben() const override; // Sobreescribe la salida específica para Fahrrad
 
 };
 

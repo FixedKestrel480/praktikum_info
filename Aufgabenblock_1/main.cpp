@@ -12,6 +12,7 @@
 #include <memory>
 #include <vector>
 #include <iomanip>
+#include "Fahrrad.h"
 using namespace std;
 
 double dGlobaleZeit = 0.0;
@@ -176,6 +177,7 @@ void vSimuFahrzeuge1_8(double Zeitinc, vector<shared_ptr<Fahrzeug>>&fahrzeuge){
 }
 
 void vAufgaben1_8(){
+
 	dGlobaleZeit =0.0;
 	vector<shared_ptr<Fahrzeug>> sharedFahrzeuge; //Se crea vector de punteros compartidos para probar con varios vehículos
 	sharedFahrzeuge.push_back(make_shared<Fahrzeug>("B_Giant",5.1)); //Se crea un elemento nuevo en vector
@@ -189,12 +191,19 @@ void vAufgaben1_8(){
 	vSimuFahrzeuge1_8(0.5,sharedFahrzeuge);
 	vSimuFahrzeuge1_8(1.0,sharedFahrzeuge);
 }
+
+void vAufgabe1_4_3_1(){
+	auto Fahrrad1 = Fahrrad("Nike",23);
+	Fahrrad1.vSimulieren();
+	Fahrrad1.vAusgeben();
+}
 int main() {
 	//vAufgabe1_5_6();
 	//vSimulieren1_7();
 	//vAufgaben1_8();
 	//vAufgabe1();
-	vAufgabe1a();
+	//vAufgabe1a();
+	vAufgabe1_4_3_1();
 
     return 0;
 }

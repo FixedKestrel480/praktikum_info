@@ -1,7 +1,9 @@
-14:35:55 **** Rebuild of configuration Debug for project bro ****
-Info: Internal Builder is used for build
-g++ "-IC:\\boost" -O0 -g3 -Wall -c -fmessage-length=0 -o bro1.o "..\\bro1.cpp" 
-g++ "-LC:\\boost\\libs" -o bro.exe bro1.o -lws2_32 
+20:51:54 **** Incremental Build of configuration Build (GNU) for project bro ****
+make all 
+Cannot run program "make": Launching failed
 
-14:35:57 Build Finished. 0 errors, 0 warnings. (took 2s.14ms)
+Error: Program "make" not found in PATH
+PATH=[C:/mingw64/bin;C:/Users/Karime Soriano/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_23.0.0.v20240919-1706/jre/bin/server;C:/Users/Karime Soriano/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_23.0.0.v20240919-1706/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Users\Karime Soriano\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\Karime Soriano\AppData\Local\Programs\Python\Python311\;C:\Users\Karime Soriano\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\PyCharm Community Edition 2022.3.2\bin;;C:\Users\Karime Soriano\AppData\Local\Programs\Microsoft VS Code\bin;C:\WINDOWS\system32;]
+
+20:51:54 Build Failed. 1 errors, 0 warnings. (took 55ms)
 
